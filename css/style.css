@@ -1,0 +1,54 @@
+body{
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif; 
+   background-color: rgb(246, 246, 246)
+}
+
+.toolbar{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.textBox{
+    margin: 5px;
+    height: 40px;
+    width: 640px;
+    border-radius: 7px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+    transition: all 0.1s;
+    z-index: 1;
+}
+
+.textBox:focus{
+    height: 135px;
+    overflow: auto;
+    scrollbar-color: #6401c4d9 #26262600;
+    scrollbar-width: thin;
+}
+
+.voiceIcon{
+    margin-top: 5px;
+}
+
+.voiceIcon:hover{
+   cursor: hand;
+}
+
+.content{
+    margin: 10px auto;
+    height: 540px;
+    width: 1040px;
+    border: 1 black dashed;
+}
+
+iframe{
+    z-index: 0;
+}

@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Помощник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <textarea class="textBox" id="textRequest" onkeydown="sendText()" placeholder="Введите ваш запрос"></textarea>
+        <img class="voiceIcon" src="img/microphone.png" height="40px" onclick="sendVoice()">
+    </div>
+    <div class="content">
+        <iframe src="subIndex" height="540px" width="1040px" frameborder="0"></iframe>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
